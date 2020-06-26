@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=BenchNine&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #ececec;
+}
+
+div.container {
+  width: 70%;
+  margin: 100px auto;
+  background-color: #cbddda;
+  border-radius: 12px;
+}
+
+img.header {
+  display: block;
+  width: 40%;
+  margin: auto;
+}
+hr {
+  width: 80%;
+  border: 1px solid #b3b3b3;
+}
+
+p {
+  width: 70%;
+  margin: 20px auto;
+  text-align: justify;
+  font-family: BenchNine;
+  font-size: 18px;
+}
+
+.white-background {
+  background-color: white;
+  border-radius: 15px;
+}
