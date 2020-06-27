@@ -1,15 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=BenchNine&display=swap');
 
+/*   cheat sheet - COLORS template
+
+  #f9f9f9 - white
+  #e6e6e6 - darker
+  #b3b3b3 - darker
+  #666    - the darkness */
+
+
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
-  bordesr: 1px solid blue;
 }
 
 body {
   background-color: #ececec;
+}
+
+.clearfix {         /*I had to deal with the img creeping out from the box */
+  overflow: auto;
 }
 
 div.container {
@@ -19,42 +31,90 @@ div.container {
   border-radius: 12px;
 }
 
-img.header {
+img.header-img {
   display: block;
   width: 40%;
-  margin: auto;
+  margin: 40px auto;
 }
+
 hr {
-  width: 80%;
+  width: 85%;
   border: 1px solid #b3b3b3;
+  background-color: #b3b3b3;
+}
+
+.hr-small {
+  width: 35%;
+  border: 0.5px solid #b3b3b3;
+  margin: 55px auto;
+}
+
+h1, h2, p, a, li {        /* Grouping all common properties of the text */
+  font-family: BenchNine;
+  margin: 0 auto;
+  width: 70%;
+  color: #767978;
+}
+
+h1, h2 {
+  color: #666;
 }
 
 h1 {
   font-size: 25px;
-  font-family: BenchNine;
   text-align: center;
-  color: #b3b3b3;
   margin-top: 80px;
 }
+
 p {
-  width: 70%;
   margin: 20px auto;
   text-align: justify;
-  font-family: BenchNine;
   font-size: 19px;
-  color: #767978;
 }
+
+nav p {
+  width: 40%;
+  text-align: center;
+}
+
+p.last {
+  padding-bottom: 40px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {                         /*   All link LOVE HATE properties */
+  text-decoration: none;
+}
+
+nav a {
+  letter-spacing: 3px;
+}
+
+a:link    { color: #666;    }
+a:visited { color: #b3b3b3; }
+a:hover   { color: #e6e6e6; }
+a:active  { color: #f9f9f9; }
+
+                        /* styling classes */
 
 .white-background {
   width: 80%;
   background-color: white;
   border-radius: 15px;
-  margin: 100px auto;
-  box-shadow: 10px 10px 2px #ccc;
+  margin: 80px auto;
+  box-shadow: 8px 8px 3px #ccc;
 }
 
 .welcome-huge-writing {
   font-size: 130px;
   text-align: center;
   padding: 80px;
+}
+
+.footer {
+  text-align: center;
+  padding-bottom: 40px;
 }
