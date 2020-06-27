@@ -5,6 +5,7 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+  bordesr: 1px solid blue;
 }
 
 body {
@@ -28,15 +29,32 @@ hr {
   border: 1px solid #b3b3b3;
 }
 
+h1 {
+  font-size: 25px;
+  font-family: BenchNine;
+  text-align: center;
+  color: #b3b3b3;
+  margin-top: 80px;
+}
 p {
   width: 70%;
   margin: 20px auto;
   text-align: justify;
   font-family: BenchNine;
-  font-size: 18px;
+  font-size: 19px;
+  color: #767978;
 }
 
 .white-background {
+  width: 80%;
   background-color: white;
   border-radius: 15px;
+  margin: 100px auto;
+  box-shadow: 10px 10px 2px #ccc;
+}
+
+.welcome-huge-writing {
+  font-size: 130px;
+  text-align: center;
+  padding: 80px;
 }
