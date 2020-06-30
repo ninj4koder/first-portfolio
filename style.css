@@ -8,7 +8,7 @@
   #666    - the darkness */
 
 
-html {
+html {                         /*    -- structure --      */
   box-sizing: border-box;
 }
 
@@ -20,7 +20,7 @@ body {
   background-color: #ececec;
 }
 
-.clearfix {         /*I had to deal with the img creeping out from the box */
+.clearfix {         /*            clearfix hack   -   I had to deal with the img creeping out from the box */
   overflow: auto;
 }
 
@@ -31,22 +31,16 @@ div.container {
   border-radius: 12px;
 }
 
-img.header-img {
+img.header-img {                /*    -- logo --     */
   display: block;
   width: 40%;
   margin: 40px auto;
 }
 
-hr {
+hr {                            /*     -- elements --    */
   width: 85%;
   border: 1px solid #b3b3b3;
   background-color: #b3b3b3;
-}
-
-.hr-small {
-  width: 35%;
-  border: 0.5px solid #b3b3b3;
-  margin: 55px auto;
 }
 
 h1, h2, p, a, li {        /* Grouping all common properties of the text */
@@ -87,18 +81,19 @@ ul {
 
 a {                         /*   All link LOVE HATE properties */
   text-decoration: none;
+  font-weight: bold;
 }
 
 nav a {
   letter-spacing: 3px;
 }
 
-a:link    { color: #666;    }
+a:link    { color: #467599; }
 a:visited { color: #b3b3b3; }
 a:hover   { color: #e6e6e6; }
 a:active  { color: #f9f9f9; }
 
-                        /* styling classes */
+                        /*   -- classes --   */
 
 .white-background {
   width: 80%;
@@ -117,4 +112,10 @@ a:active  { color: #f9f9f9; }
 .footer {
   text-align: center;
   padding-bottom: 40px;
+}
+
+.hr-small {
+  width: 35%;
+  border: 0.5px solid #b3b3b3;
+  margin: 55px auto;
 }
